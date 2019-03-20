@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Parralel Execution Suite" group-by-instances="true" parallel="tests" thread-count="3">
+  <test verbose="2" name="Functional test">
+    <classes>
+      <class name="parallel.ParallelExecution"/>
+      <class name="parallel.ParallelExecution2"/>
+    </classes>
+  </test> <!-- Functional test -->
+  
+  <test verbose="2" name="Sanity test">
+    <classes>
+      <class name="parallel.ParallelExecution"/>
+      <class name="parallel.ParallelExecution2"/>
+    </classes>
+  </test> <!-- Functional test -->
+  </suite>
